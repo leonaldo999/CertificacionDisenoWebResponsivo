@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practica</title>
+</head>
+
+<body>
+  <main>
+    <h1>Mi Libro de fotos</h1>
+
+    <section>
+      <h2>Fotos mias</h2>
+      <p>
+        Ver mas <a href="#" target="_blank">fotos mias</a> en mi galerias de fotos
+      </p>
+      <a href="#">Link a mis Fotos</a>
+      <br>
+      <a href="#" target="_blank">
+        <img src="img/YOP.jpg" alt="Yo" width="300">
+      </a>
+    </section>
+
+    <section>
+      <h2>Mi lista</h2>
+
+      <h3>Cosas que me encanta:</h3>
+      <ul>
+        <li>Comer</li>
+        <li>Dormir</li>
+        <li>Programar</li>
+        <li>Ver peliculas</li>
+        <li>Los perros</li>
+      </ul>
+
+      <figure>
+        <img src="img/programing.jpg" alt="Programar" width="300">
+        <figcaption>Me <em>encanta</em> Programar</figcaption>
+      </figure>
+
+      <h3>Las 3 cosas más importantes que no me agrada:</h3>
+      <ol>
+        <li>La guanabana</li>
+        <li>Levantarme temprano</li>
+        <li>Ver gente maltratar perros</li>
+      </ol>
+
+      <figure>
+        <img src="img/temprano.jpg" alt="Temprano" width="300">
+        <figcaption>No me <em>encanta</em> Levantarme Temprano</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Formulario Mio</h2>
+      <form action="">
+        <fieldset>
+          <legend>Te gusta programar en</legend>
+          <label for="ingles">
+            <input type="radio" id="ingles" name="idioma" value="ingles">
+            Ingles
+          </label>
+          <label for="espanol">
+            <input type="radio" id="espanol" name="idioma" value="espanol">
+            Español
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Cual es tu lenguaje Favorito?</legend>
+          <input checked type="checkbox" id="java" name="lenguaje" value="java">
+          <label for="java">
+            Java
+          </label>
+          <input type="checkbox" id="python" name="lenguaje" value="python">
+          <label for="python">
+            Python
+          </label>
+          <input type="checkbox" id="javascript" name="lenguaje" value="javascript">
+          <label for="javascript">
+            JavaScript
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Que te gustaria aprender?</legend>
+          <select name="aprender" id="aprender">
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+            <option value="javascript">JavaScript</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Dejanos tu comentario</legend>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" placeholder="Nombre" required> <br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Email" required> <br>
+          <label for="telefono">Telefono:</label>
+          <input type="tel" id="telefono" placeholder="Telefono" required> <br>
+          <label for="mensaje">Mensaje:</label>
+          <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+        </fieldset>
+
+        <br>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Mi Libro de fotos</p>
+    </footer>
+  </main>
+</body>
+
+</html>

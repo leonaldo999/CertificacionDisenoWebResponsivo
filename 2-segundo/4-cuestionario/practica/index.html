@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cuestionario de Diseño Web Responsivo (Practica)">
+  <title>Cuestionario de Diseño Web Responsivo (Practica)</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <header>
+    <img src="./img/logoSor.jpg" alt="sorpresasPeludas" id="logoSor">
+    <h1>SorpresasPeludas</h1>
+    <nav>
+      <ul>
+        <li><a href="#">INFO</a></li>
+        <li><a href="#">ADOP</a></li>
+        <li><a href="#">STORE</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form action="">
+
+      <section role="region" aria-labelledby="adop-info">
+        <h2 id="adop-info">Informacion de adoptante</h2>
+
+        <div class="info">
+          <label for="adop-name">Name:</label>
+          <input id="adop-name" type="text" name="mame">
+        </div>
+
+        <div class="info">
+          <label for="birth-date">Fecha de nacimiento:</label>
+          <input id="birth-date" type="date" name="birth-date">
+        </div>
+
+        <div class="info">
+          <label for="adop-email">Correo electonico:</label>
+          <input id="adop-email" type="email" name="email">
+        </div>
+      </section>
+
+      <section role="region" aria-labelledby="adop-questions">
+
+        <h2 id="adop-questions">Cuestionario</h2>
+
+        <div class="question-block">
+
+          <h3><span class="sr-only">Pregunta</span>1</h3>
+
+          <fieldset class="question" name="question">
+            <legend>
+              Estoy dispuesto a asumir la responsabilidad de cubrir los gastos veterinarios y de alimentación necesarios
+              para garantizar el bienestar del perro.
+            </legend>
+            <ul class="answers-list">
+              <li>
+                <label for="q1-a1">
+                  <input type="radio" name="question1" id="q1-a1" value="true">
+                  Verdadero
+                </label>
+              </li>
+              <li>
+                <label for="q1-a2">
+                  <input type="radio" name="question1" id="q1-a2" value="false">
+                  Falso
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+
+        <div class="question-block">
+          <h3><span class="sr-only">Pregunta</span>2</h3>
+          <fieldset class="question" name="question">
+            <legend>
+              Si en algún momento enfrento cambios en mi vida, como mudanzas o viajes, me comprometo a buscar soluciones
+              que aseguren que el perro esté cuidado y no sea abandonado.
+            </legend>
+            <ul class="answers-list">
+              <li>
+                <label for="q1-a1">
+                  <input type="radio" name="question1" id="q1-a1" value="true">
+                  Verdadero
+                </label>
+              </li>
+              <li>
+                <label for="q1-a2">
+                  <input type="radio" name="question1" id="q1-a2" value="false">
+                  Falso
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+
+      </section>
+
+      <section role="region" aria-labelledby="adop-prevention">
+        <h2 id="adop-prevention">Prevención</h2>
+        <div class="formrow">
+          <div class="question-block">
+            <label for="selector">
+              Puede un perro con alergia comer pescado?
+            </label>
+          </div>
+          <div class="answer">`
+            <select required name="selector" id="selector">
+              <option value="">Select an option</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="question-block">`
+            <label for="css-textarea">
+              ¿Tienes alguna pregunta?:
+            </label>
+          </div>
+          
+          <div class="answer">
+            <textarea name="css-textarea" id="css-textarea" rows="5" cols="24"></textarea>
+          </div>
+        </div>
+      </section>
+
+      <button type="submit">Send</button>
+    </form>
+  </main>
+
+  <footer>
+    <address>
+      <a href="#">LeonaldoDev</a><br />
+      Lima<br />
+      Cajamarca<br />
+      PERU
+    </address>
+  </footer>
+</body>
+
+</html>

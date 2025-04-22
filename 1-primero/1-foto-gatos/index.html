@@ -1,0 +1,261 @@
+<!-- 
+  Todas las páginas deben comenzar con <!DOCTYPE html>. Esta cadena especial es conocida como una declaración y se asegura de que el navegador intente cumplir las especificaciones de la industria.
+
+  <!DOCTYPE html> le dice a los navegadores que el documento es un documento HTML5 la cual es la última versión de HTML.
+-->
+<!DOCTYPE html>
+
+<!-- 
+  Puedes ver que todo el contenido de la página está anidado dentro de un elemento html. El elemento html es elemento esencial de una página HTML y envuelve todo el contenido en la página.
+
+  Tu también puedes especificar el lenguaje de tu página agregando el atributo lang a el elemento html.
+-->
+<html lang="en">
+
+<!-- 
+  Sin embargo, otro tipo información que también es importante va dentro del elemento head.
+
+  El elemento head se utiliza para contener metadatos sobre el documento, como su título, enlaces a hojas de estilo y scripts. Los metadatos son información sobre la página que no se muestra directamente en la página.
+-->
+
+<head>
+
+  <!-- 
+    Dentro del elemento head, anida un elemento meta con un atributo charset. Con el valor utf-8 que le dirá al navegador cómo codificar los caracteres en la página.
+    Ten en cuenta que el elemento meta es un elemento vacío.
+    <meta attribute="value">
+  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 
+    El elemento title (título) determina lo que los navegadores muestran en la barra de título o en las pestañas del navegador.
+  -->
+  <title>APP foto de gatos</title>
+</head>
+
+<body>
+  <!-- 
+  En el paso anterior, has colocado los elementos h1, h2, comentario y p dentro del elemento main. This is called nesting. Los elementos anidados deben colocarse dos espacios más a la derecha del elemento en el que están anidados. Este espacio se llama sangría (indentación en programación) y se utiliza para facilitar la lectura de HTML.
+  -->
+  <!-- 
+  HTML5 tiene diferentes elementos que ayudan a diferenciar diferentes tipos de contenido. Estos elementos hacen tu código HTML más fácil de leer y ayudan con el Posicionamiento en buscadores (Search Engine Optimization - SEO) y accesibilidad.
+
+  El elemento main se utiliza para representar el contenido principal del cuerpo de un documento HTML. El contenido dentro del elemento main debe ser único para el documento y no debe repetirse en otras partes del documento.
+  -->
+  <main>
+
+    <!-- 
+    Los elementos HTML tienen etiquetas de apertura como <h1> y etiquetas de cierre como </h1>. El texto que mostrará un elemento va entre sus etiquetas de apertura y cierre.
+
+    Cambie el texto del elemento h1 que aparece a continuación de Hello World a CatPhotoApp y observe el cambio en la vista previa del navegador.
+    <h1>Hello World</h1>
+-->
+    <h1>CatPhotoApp</h1>
+
+    <!-- 
+      Los elementos de encabezado h1 a h6 se utilizan para indicar la importancia del contenido por debajo de ellos. Entre menor sea el número, el contenido será más importante, por lo tanto, el elemento h2 es menos importante que el elemento h1.
+
+      <h1>most important heading element</h1>
+      <h2>second most important heading element</h2>
+      <h3>third most important heading element</h3>
+      <h4>fourth most important heading element</h4>
+      <h5>fifth most important heading element</h5>
+      <h6>least important heading element</h6>  
+    -->
+
+    <!-- 
+      Antes de añadir nuevo contenido, deberías utilizar un elemento section, para separar el contenido de cat photos, del contenido que añadiremos después.
+
+      El elemento section es usado para definir secciones en un documento, como capítulos, encabezados, pies de página, o cualquier otra sección del documento. Es un elemento semántico que ayuda con la SEO y la accesibilidad.
+    -->
+    <section>
+      <!-- 
+        Solo utiliza un elemento h1 por página y coloca encabezados de menor importancia debajo de encabezados de mayor importacion.
+
+        Debajo del elemento h1, añade un elemento h2 con este texto: Cat Photos.
+      -->
+      <h2>Cat Photos</h2>
+      <!-- 
+      El elemento p es usado para crear un párrafo de texto en sitios webs. Crea un elemento p debajo de tu elemento h2 y dale el siguiente texto:
+
+      Everyone loves cute cats online!
+      -->
+      <p>See more <a href="https://freecatphotoapp.com" target="_blank">cat photos</a> in our gallery.</p>
+      <!-- 
+        Los comentarios te permiten dejar mensajes sin afectar lo que se muestra en el navegador. Te permite crear código que no se ejecutará. Un comentario en HTML comienza con < !--, contiene tantas líneas de texto como quieras, y termina con -- >.
+      -->
+      <!-- 
+        Puedes enlazar a otra página con el elemento de anclaje (a).
+
+        Este es un ejemplo de enlace a https://www.freecodecamp.org:
+
+        El texto de un enlace debe colocarse entre las etiquetas de apertura y cierre de un elemento de anclaje (a).
+
+        Para abrir enlaces en una pestaña nueva, puedes usar el atributo target en el elemento ancla (a).
+
+        El atributo target especifica dónde abrir el elemento enlazado. target="_blank" abre el elemento enlazado en una nueva pestaña o ventana.
+
+        En los pasos anteriores usaste un elemento anchor para convertir un texto a un enlace. Otros tipos de contenido también se pueden convertir en un enlace envolviéndolos en etiquetas anchor.
+      -->
+      <a href="https://freecatphotoapp.com" target="_blank">link to cat pictures</a><br>
+      <a href="https://freecatphotoapp.com">
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+          alt="A cute orange cat lying on its back">
+      </a>
+    </section>
+
+    <section>
+      <!--
+        Cuando añades un elemento de título de menor rango a la página, se da a entender que estás iniciando una nueva sub-sección.
+        -->
+      <h2>Cat Lists</h2>
+      <h3>Things cats love:</h3>
+
+      <!-- 
+        Para crear una lista no ordenada de elementos, puedes usar el elemento ul.
+
+        El elemento li es usado para crear una lista de elementos en una lista ordenada o en una lista desordenada.
+      -->
+      <ul>
+        <li>cat nip</li>
+        <li>laser pointers</li>
+        <li>lasagna</li>
+      </ul>
+
+      <!-- 
+        El elemento figure representa contenido independiente y te permitirá asociar una imagen a una descripción.
+      -->
+      <figure>
+        <!-- 
+          Puedes añadir imágenes a tu sitio web utilizando el elemento img. Los elementos img tienen una etiqueta de apertura, pero no una etiqueta de cierre. Un elemento sin etiqueta de cierre se conoce como void element.
+
+          Los atributos HTML son palabras especiales usadas dentro de la etiqueta de apertura de un elemento para controlar el comportamiento del elemento. El atributo src en un elemento img especifica la URL (donde se localiza la imagen). Un ejemplo de cómo se ve un elemento img es:
+
+          Todos los elementos img deben tener un atributo alt. El texto del atributo alt es utilizado por lectores de pantalla para mejora la accesibilidad y es mostrado en caso de que la imagen falle en cargar.
+        -->
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
+          alt="A slice of lasagna on a plate.">
+
+        <!-- 
+          El elemento de leyenda de figura (figcaption) se usa para agregar una leyenda que describe la imagen contenida en el elemento figure.
+
+          Para poner énfasis en una palabra o frase específica, puedes utilizar el elemento em.
+        -->
+        <figcaption>Cats <em>love</em> lasagna.</figcaption>
+      </figure>
+      <h3>Top 3 things cats hate:</h3>
+
+      <!-- 
+        El código de una lista ordenada, ordered list (ol), es similar al de una lista no ordenada, unordered list (ul), pero los elemento de una lista ordenada aparecen enumerados.
+      -->
+      <ol>
+        <li>flea treatment</li>
+        <li>thunder</li>
+        <li>other cats</li>
+      </ol>
+      <figure>
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg"
+          alt="Five cats looking around a field.">
+
+        <!-- 
+            El elemento strong se utiliza para indicar que una parte de un texto es importante o urgente.
+          -->
+        <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Cat Form</h2>
+      <!-- 
+        Ahora añadirás un formulario web para recolectar información de los usuarios.
+
+        El elemento form se utiliza para obtener información de un usuario, como su nombre, correo electrónico y otros detalles.
+
+        El atributo action indica dónde se deben enviar los datos del formulario. 
+      <form action="/submit-url"></form> 
+      -->
+      <form action="https://freecatphotoapp.com/submit-cat-photo">
+
+        <!-- 
+          El elemento fieldset se utiliza para agrupar elementos input y label relacionados dentro de un formulario web. Los elementos fieldset son elementos de nivel de bloque, lo que significa que aparecen en una nueva línea.
+        -->
+        <fieldset>
+          <!-- 
+            El elemento legend actúa como una leyenda/descripción, para el contenido del elemento fieldset. Le da a los usuarios un contexto sobre lo que deben ingresar en esa parte del formulario.
+          -->
+          <legend>Is your cat an indoor or outdoor cat?</legend>
+          <!-- 
+            Los elementos label se utilizan para ayudar a asociar el texto de un elemento input con el propio elemento input (especialmente para tecnologías de asistencia como lectores de pantalla).
+          -->
+          <label>
+            <!-- 
+              Puedes usar botones de radio (radio button) para preguntas en las que quieres que el usuario solo te dé una respuesta a partir de múltiples opciones.
+              Recuerda que un elemento de input es un elemento vacío. No tiene etiqueta de cierre.
+
+              El atributo id se utiliza para identificar elementos HTML específicos. Cada atributo id debe tener un valor único, diferente a los demás valores id de la página.
+
+              Si seleccionas el radio button Indoor y envías el formulario, los datos del radio button se basarán en sus atributos name y value. Ya que tus elementos radio button no tienen el atributo value, los datos del formulario se verán así indoor-outdoor=on, lo cual no es útil cuando tienes múltiples radio button.
+            -->
+            <input checked type="radio" id="indoor" name="indoor-outdoor" value="indoor"> Indoor
+          </label>
+          <label>
+            <input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>What's your cat's personality?</legend>
+          <!-- 
+            Los formularios Usualmente usan casillas de verificación (checkboxes-checkbox) para preguntas que puedan tener más de una respuesta. El elemento input con un atributo type establecido en checkbox crea una casilla de verificación.
+
+            Hay otra manera de asociar un texto con el elemento input. Puedes anidar un texto dentro de un elemento label y añadirle un atributo for con el mismo valor del atributo id del elemento input.
+
+            Add the name attribute with the value personality to the checkbox input element.
+            Aunque no notarás cambios en el navegador, hacer esto hará más fácil que un servidor procese tu formulario web, especialmente cuando hay múltiples checkbox.
+
+            Al igual que los radio button, los datos de formulario de un checkbox se basan en los atributos name / value. Mientras que el atributo value es opcional, es una buena práctica incluirlo en cualquier checkbox o radio button de una página.
+
+            Para hacer que una casilla de verificación o un botón de radio este seleccionado de forma predeterminada, necesitas añadirle el atributo checked.
+            No hay necesidad de agregarle un valor al atributo checked. Simplemente necesitas añadir la palabra checked al elemento input, asegurándote de que hay espacios entre ella y los otros atributos.
+          -->
+          <input checked type="checkbox" id="loving" name="personality" value="loving"> <label
+            for="loving">Loving</label>
+
+          <input type="checkbox" id="lazy" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+          <input type="checkbox" id="energetic" name="personality" value="energetic"> <label
+            for="energetic">Energetic</label>
+        </fieldset>
+        
+        <!-- 
+          El elemento input te permite recolectar datos desde un formulario web de diferentes formas. Al igual que los elementos img, los elementos input son un void element y no necesitan etiquetas de cierre.
+
+          Hay diferentes tipos de elementos input, los cuales los puedes crear con el atributo type. Puedes crear fácilmente un campo de contraseña (password), un botón de reinicio (reset) o un control para permitir a los usuarios seleccionar un archivo desde su computadora.
+
+          Para que los datos de un formulario sean accesibles en la ubicación especificada en el atributo action, debes darle al campo de texto un atributo name y asignarle un valor que represente los datos que se están enviando.
+
+          El texto de marcador de posición se utiliza para dar al usuario una pista sobre qué tipo de información ingresar en un campo de entrada.
+
+          Para evitar que un usuario entregue su formulario incompleto, necesitas añadir el atributo required al elemento input. El atributo required no necesita ningún valor. Simplemente, necesitas añadir la palabra required al elemento input, asegurándote de que hay espacios entre ella y los otros atributos.
+        -->
+        <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+
+        <!-- 
+          El elemento button se utiliza para crear un botón cliqueable.
+
+          A pesar de que hayas añadido tu botón debajo del elemento input de tipo texto, estos aparecen juntos en la página. Esto se debe a que los elementos input y button son elementos inline, los cuales no aparecen en una nueva línea.
+        -->
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- 
+    El elemento footer se usa para definir el pie de página de un documento o sección. Un pie de página normalmente contiene información sobre el autor del documento, datos de copyright, enlaces a términos de uso, información de contacto, etcétera.
+  -->
+  <footer>
+    <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,215 @@
+/* Estilos generales */
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #2c4e46;
+  color: #f5f6f7;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin: auto;
+  max-width: 1200px;
+  padding: 2em;
+  background: linear-gradient(-77deg, #416e64 0%, #253f39 50%);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  margin: 0 0 1em 0;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+p {
+  margin: 0 0 1.5em 0;
+  text-align: center;
+  color: #d1d1d1;
+}
+
+form {
+  margin: 0 auto;
+  max-width: 500px;
+  width: 100%;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 2px solid #75a7a0;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+  font-weight: bold;
+  color: #f5f6f7;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  margin: 10px 0 0 0;
+  padding: 0.8em;
+  min-height: 2.5em;
+  background-color: #0a231b;
+  border: 1px solid #0a2319;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 1rem;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #75a7a0;
+  box-shadow: 0 0 5px rgba(117, 167, 160, 0.8);
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+select option {
+  background-color: #0a231b;
+  color: #ffffff;
+}
+
+a {
+  color: #dfdfe2;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #f5f6f7;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1.5em auto;
+  height: 2.5em;
+  font-size: 1.1rem;
+  background-color: #75a7a0;
+  border: none;
+  color: #ffffff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #5e8f85;
+  transform: scale(1.05);
+}
+
+input[type="file"] {
+  padding: 1px 2px;
+  background-color: #0a231b;
+  border: 1px solid #0a2319;
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Consultas de medios para pantallas grandes (computadoras y laptops) */
+@media (min-width: 1024px) {
+  .container {
+    padding: 3em;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  form {
+    max-width: 600px;
+  }
+
+  input[type="submit"] {
+    width: 50%;
+  }
+}
+
+/* Consultas de medios para pantallas medianas (tablets) */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .container {
+    padding: 2em;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  form {
+    max-width: 80%;
+  }
+
+  input[type="submit"] {
+    width: 70%;
+  }
+}
+
+/* Consultas de medios para pantallas pequeñas (celulares grandes) */
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5em;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  form {
+    max-width: 90%;
+  }
+
+  input[type="submit"] {
+    width: 80%;
+  }
+}
+
+/* Consultas de medios para pantallas muy pequeñas (celulares pequeños) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  input,
+  textarea,
+  select {
+    font-size: 0.9rem;
+    padding: 0.6em;
+  }
+
+  input[type="submit"] {
+    font-size: 1rem;
+    width: 100%;
+  }
+}

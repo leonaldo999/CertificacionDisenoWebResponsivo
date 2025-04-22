@@ -1,0 +1,198 @@
+@media (prefers-reduced-motion: mo-preference) {
+	* {
+		scroll-behavior: smooth;
+	}
+}
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Special+Gothic+Condensed+One&family=Special+Gothic+Expanded+One&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap");
+
+body {
+	background: #f5f6f7;
+	color: black;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	margin: 0;
+}
+
+header {
+	width: 100%;
+	height: 50%;
+	background-color: cadetblue;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	top: 0;
+}
+
+#logoSor {
+	width: max(2.5rem, 4.5vw);
+	border: none;
+	border-radius: 50%;
+	background-color: cadetblue;
+	aspect-ratio: 25 / 25;
+	padding: 0.4rem;
+}
+
+h1 {
+	color: #ebe41d;
+	font-size: min(6vw, 2em);
+	text-align: center;
+}
+
+nav {
+	width: 50%;
+	max-width: 300px;
+	height: 50px;
+}
+
+nav > ul {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	align-items: center;
+	padding-inline-start: 0;
+	margin-block: 0;
+	height: 100%;
+}
+
+nav > ul > li {
+	color: #ebe41d;
+	margin: 0 0.2rem;
+	padding: 0.2rem;
+	display: block;
+	font-family: "Special Gothic Expanded One", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+nav > ul > li:hover {
+	background-color: #dfdfe2;
+	color: #1b1b32;
+	cursor: pointer;
+	border: none;
+	border-radius: 12%;
+	font-family: "Special Gothic Expanded One", sans-serif;
+}
+
+li > a {
+	color: inherit;
+	text-decoration: none;
+}
+
+main {
+	padding-top: 50px;
+}
+
+section {
+	width: 80%;
+	margin: 0 auto 10px auto;
+	max-width: 600px;
+}
+
+h1,
+h2 {
+	font-family: "Special Gothic Expanded One", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+h2 {
+	border-bottom: 4px solid #ceced2;
+	margin-top: 0px;
+	padding-top: 60px;
+}
+
+.info {
+	padding: 10px 0 0 5px;
+}
+
+.formrow {
+	margin-top: 30px;
+	padding: 0px 15px;
+}
+
+input {
+	font-size: 1rem;
+}
+
+.info label,
+.info input {
+	display: inline-block;
+}
+
+.info input {
+	width: 35%;
+	text-align: left;
+}
+
+.info label {
+	width: 30%;
+	min-width: 55px;
+	text-align: left;
+}
+
+.question-block {
+	text-align: left;
+	display: block;
+	width: 100%;
+	margin-top: 20px;
+	padding-top: 5px;
+}
+
+h3 {
+	margin-top: 5px;
+	padding-left: 15px;
+	font-size: 1.375rem;
+}
+
+h3::before {
+	content: "Pregunta #";
+}
+
+.question {
+	border: none;
+	padding-bottom: 0;
+}
+
+.answers-list {
+	list-style: none;
+	padding: 0;
+}
+
+button {
+	display: block;
+	margin: 40px auto;
+	width: 40%;
+	padding: 15px;
+	font-size: 1.438rem;
+	background: #60d3e2;
+	border: 3px solid #638399;
+	border-radius: 15px;
+}
+
+footer {
+	background-color: cadetblue;
+	display: flex;
+	justify-content: center;
+}
+
+footer,
+footer a {
+	color: #ebe41d;
+}
+
+address {
+	text-align: center;
+	padding: 0.3em;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	clip-path: inset(50%);
+	white-space: nowrap;
+}

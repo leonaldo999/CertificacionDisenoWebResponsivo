@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form 'Practica'</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Bienvenido al formulario de registro</h1>
+    <p>Por favor, rellene este formulario con la información requerida.</p>
+
+    <form action="#" method="post">
+
+      <fieldset>
+        <label for="first-name">Ingrese su nombre:
+          <input id="first-name" name="first-name" type="text" required>
+        </label>
+        <label for="last-name">Ingrese su apellido:
+          <input id="last-name" name="last-name" type="text" required>
+        </label>
+        <label for="email">Ingrese su correo electrónico:
+          <input id="email" name="email" type="email" required>
+        </label>
+        <label for="new-password">Crear una nueva contraseña:
+          <input id="new-password" name="new-password" type="password" required pattern="[a-z0-9]{8,}">
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Account type (required)</legend>
+        <label for="volunteering-account">
+          <input id="volunteering-account" type="radio" name="account-type" checked class="inline" />
+          Voluntariado
+        </label>
+        <label for="sponsors-account">
+          <input id="sponsors-account" type="radio" name="account-type" class="inline" />
+          Apadrinamiento
+        </label>
+        <label for="adoption-account">
+          <input id="adoption-account" type="radio" name="account-type" class="inline" />
+          Adopción
+        </label>
+        <label for="donation-account">
+          <input id="donation-account" type="radio" name="account-type" class="inline" />
+          Donación
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label for="profile-picture">
+          Sube una foto de perfil:
+          <input id="profile-picture" name="profile-picture" type="file" accept="image/*" required>
+        </label>
+        <label for="age">
+          Ingresa tu edad (años):
+          <input id="age" name="age" type="number" min="13" max="120">
+        </label>
+        <label for="referrer">
+          Cómo supiste de nosotros?
+          <select id="referrer" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">News</option>
+            <option value="2">YouTube Channel</option>
+            <option value="3">Forum</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <label for="bio">
+          Provide a bio:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+        </label>
+      </fieldset>
+
+      <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" name="terms-and-conditions" type="checkbox" required>
+        I accept the
+        <a href="#">
+          terms and conditions
+        </a>
+      </label>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+</body>
+
+</html>

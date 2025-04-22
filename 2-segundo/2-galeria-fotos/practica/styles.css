@@ -1,0 +1,58 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: sans-serif;
+	background-color: #f5f6f7;
+}
+
+.header {
+	text-align: center;
+	text-transform: uppercase;
+	padding: 32px;
+	background-color: #244f38;
+	color: #fff;
+	border-bottom: 4px solid#eefd47;
+}
+
+.gallery {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 30px 10px;
+	max-width: 1400px;
+	margin: 0 auto;
+	gap: 19px;
+}
+
+.gallery img {
+	width: 100%;
+	max-width: 350px;
+	height: 500px;
+  max-height: 500px;
+	object-fit: cover; /* esto hace q la imagen se ajuste al tamaño del contenedor */
+	border-radius: 10px;
+  margin-top: 10px;
+  transition: opacity 0.3s;
+  filter: brightness(0.9);
+}
+
+/* esto se agrega adicionalmente */
+.gallery img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0.6;
+  transition: opacity 0.3s;
+  filter: brightness(0.8);
+}
+
+.gallery::after {
+	content: "";
+	width: 350px;
+}
